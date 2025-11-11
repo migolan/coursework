@@ -1,54 +1,5 @@
 # Causal Inference
-
-https://www.coursera.org/learn/crash-course-in-causality/
-
-- module 1 - causal effects
-    - potential outcomes and counterfactuals
-        
-        treatments - A
-        
-        potential outcomes - Y^a, a\in A - outcome that would be observed if the treatment was a
-        
-        observed outcome - factual outcome
-        
-        counterfactual outcome - what would happen if the treatment would not have been given
-        
-    - hypothetical interventions
-        - cleanest to think about causal effects of interventions or actions - variables that can be manipulated
-        - we assume there’s only one version of treatment - no hidden versions
-        - we assume the treatments are not immutable (can’t change a person’s race or gender, but we might try to control the name/sex on a form) - so we’ll consider manipulable interventions
-        - we assume treatments that can be randomized and manipulable
-    - causal effects
-        
-        average causal effect - E[Y^1-Y^0] ~= E[Y|A=1]-E[Y|A=0]
-        
-        E[Y|A=1] is restricting to the subpopulation of people who actually had A=1 - which might differ from the actual population
-        
-        E[Y|A=1]-E[Y|A=0] - not causal effect - this compares 2 different populations of people
-        
-        E[Y^1-Y^0] - causal effect
-        
-        E[Y^1/Y^0] - causal relative risk
-        
-        E[Y^1-Y^0|A=1] - causal effect of treatment on the treated
-        
-    - causal assumptions
-        - SUTVA (stable unit treatment value assumption)
-            - no interference between treatments on different units
-            - consistency - potential outcome is equal to observed outcome E[Y|A=a,X=x]=E[Y^a|A=a,X=x]
-        - ignorability - assignment is independent on potential outcomes - treatment is randomly assigned among people with same value of pre-treatment covariates X (we can drop conditioning on A) E[Y^a|A=a,X=x]=E[Y^a|X=x]
-        - positivity assumption - treatment assignment was not deterministic given X P(A=a|X=x)>0
-        - E[Y|A=a,X=x]=E[Y^a|A=a,X=x]=E[Y^a|X=x]
-    - stratification
-    - incident user design - only new initiators
-    - active comparator design - comparing 2 active interventions - less confounding
-- module 2 - confounding and DAGs
-    - confounders - variables that affect treatment and the outcome
-    - we want to identify a set of variables X that will make the ignorability assumption hold
-
-https://www.coursera.org/learn/ai-for-medical-treatment/
-
-W1A1
+https://www.coursera.org/learn/ai-for-medical-treatment/ - W1
 
 $p_{treatment}=\frac{n_{treatment}}{n}$
 
